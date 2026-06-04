@@ -43,26 +43,33 @@
 
 ## 📊 분석 결과
 
+### EDA - 탐색적 분석 결과
+> ![EDA1](figures/eda_01_distribution.png)
+> ![EDA2](figures/eda_02_h1_screen_loss.png)
+> ![EDA3](figures/eda_03_h2_ration_gap.png)
+> ![EDA4](figures/eda_04_correlation.png)
 ### H1 — 스크린 이탈 (채택)
 - Kruskal-Wallis `p = 0.0001`, Mann-Whitney U (중형 vs 대형) `p = 0.0003`
 - Cliff's δ = `−0.339` (중간 효과 크기)
-
+> ![H1 스크린 이탈](figures/eda_02_h1_screen_loss.png)
+> ![H1 바이올린](figures/hypo_h1_violin.png)
+> [H1 효과크기](figures/hypo_h1_bar_delta.png)
 ### H2 — 평점 괴리 (부분 채택)
 - 평점: 중형 7.00 vs 대형 7.15 (`p = 0.047`, 차이 미미)
 - 생존율: 중형 **62.8%** vs 대형 **92.2%** (카이제곱 `p = 0.0002`)
 - 평점–유지율 상관 Pearson `r = 0.183` (매우 약함)
+![H2 평점 괴리](figures/eda_03_h2_rating_gap.png)
 
 ### H3 — 예측 가능성 (탐색적 지지)
 - 로지스틱 회귀, 5-Fold CV `AUC = 0.643` · Test `AUC = 0.698`
 - SHAP: 첫 주 흥행 0.571(1위) · 평점(2위) · … · 가격 인상 0.078(최하위)
 - ⚠️ 테스트셋 **23편**으로 작아 신뢰구간이 넓음 → *"예측된다"가 아니라 "탐색적으로 확인"*
-
-> 📷 그래프는 `figures/` 폴더에 PNG를 넣으면 아래에서 렌더링됩니다.
+![H3 ROC](figures/h3_roc_performance.png)
+![H3 SHAP](figures/h3_shap.png)
+> 그 외 전처리 작업 전 문제 상황, log 변환 전/후 그래프
 >
-> ![EDA](figures/eda_01_distribution.png)
-> ![H1](figures/h1_screen_loss.png)
-> ![H2](figures/h2_rate_gap.png)
-> ![H3 ROC](figures/h3_roc_curve.png)
+> ![전처리](figures/전처리작업전데이터문제.png)
+> ![전처리](figures/log_변환.png)
 
 ---
 

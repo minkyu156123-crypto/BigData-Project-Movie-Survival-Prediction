@@ -59,9 +59,9 @@
 
 > 📷 그래프는 `figures/` 폴더에 PNG를 넣으면 아래에서 렌더링됩니다.
 >
-> <!-- ![EDA](figures/eda_01_distribution.png) -->
-> <!-- ![H1](figures/h1_screen_loss.png) -->
-> <!-- ![H3 ROC](figures/h3_roc_curve.png) -->
+> ![EDA](figures/eda_01_distribution.png)
+> ![H1](figures/h1_screen_loss.png)
+> ![H3 ROC](figures/h3_roc_curve.png)
 
 ---
 

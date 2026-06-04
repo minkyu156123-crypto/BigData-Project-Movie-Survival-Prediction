@@ -61,7 +61,7 @@
 >
 > ![EDA](figures/eda_01_distribution.png)
 > ![H1](figures/h1_screen_loss.png)
-> ![H2](figures/h2_rating gap.png)
+> ![H2](figures/h2_rate_gap.png)
 > ![H3 ROC](figures/h3_roc_curve.png)
 
 ---
